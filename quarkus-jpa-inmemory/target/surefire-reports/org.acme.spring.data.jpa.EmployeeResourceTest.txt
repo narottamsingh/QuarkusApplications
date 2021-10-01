@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: org.acme.spring.data.jpa.EmployeeResourceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.05 s <<< FAILURE! - in org.acme.spring.data.jpa.EmployeeResourceTest
+org.acme.spring.data.jpa.EmployeeResourceTest.testListAllFruits  Time elapsed: 0.033 s  <<< ERROR!
+java.lang.RuntimeException: 
+java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor#configurationDescriptorBuilding threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Model classes are defined for the default persistence unit, but no default datasource was found. The default EntityManagerFactory will not be created. To solve this, configure the default datasource. Refer to https://quarkus.io/guides/datasource for guidance.
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.handleHibernateORMWithNoPersistenceXml(HibernateOrmProcessor.java:794)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.configurationDescriptorBuilding(HibernateOrmProcessor.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.quarkus.deployment.ExtensionLoader$2.execute(ExtensionLoader.java:820)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:277)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+Caused by: java.lang.RuntimeException: 
+io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor#configurationDescriptorBuilding threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Model classes are defined for the default persistence unit, but no default datasource was found. The default EntityManagerFactory will not be created. To solve this, configure the default datasource. Refer to https://quarkus.io/guides/datasource for guidance.
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.handleHibernateORMWithNoPersistenceXml(HibernateOrmProcessor.java:794)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.configurationDescriptorBuilding(HibernateOrmProcessor.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.quarkus.deployment.ExtensionLoader$2.execute(ExtensionLoader.java:820)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:277)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+Caused by: io.quarkus.builder.BuildException: 
+Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor#configurationDescriptorBuilding threw an exception: io.quarkus.runtime.configuration.ConfigurationException: Model classes are defined for the default persistence unit, but no default datasource was found. The default EntityManagerFactory will not be created. To solve this, configure the default datasource. Refer to https://quarkus.io/guides/datasource for guidance.
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.handleHibernateORMWithNoPersistenceXml(HibernateOrmProcessor.java:794)
+	at io.quarkus.hibernate.orm.deployment.HibernateOrmProcessor.configurationDescriptorBuilding(HibernateOrmProcessor.java:291)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.quarkus.deployment.ExtensionLoader$2.execute(ExtensionLoader.java:820)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:277)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+Caused by: io.quarkus.runtime.configuration.ConfigurationException: Model classes are defined for the default persistence unit, but no default datasource was found. The default EntityManagerFactory will not be created. To solve this, configure the default datasource. Refer to https://quarkus.io/guides/datasource for guidance.
+

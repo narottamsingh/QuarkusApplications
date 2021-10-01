@@ -1,0 +1,4 @@
+com\bce\EmployeeResource.class
+META-INF\panache-archive.marker
+com\bce\model\Employee.class
+com\bce\repository\EmployeeRepository.class
